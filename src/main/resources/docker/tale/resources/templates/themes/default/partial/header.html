@@ -31,14 +31,13 @@
     <div class="navbar-container">
         <a href="${site_url()}" class="navbar-logo">
             #if(theme_option('logo_url') == "")
-            <img src="${theme_url('/static/img/logo.png')}" alt="${site_title()}" style="height: 38px;"/>
+            <img src="${theme_url('/static/img/home.png')}" alt="${site_title()}" style="height: 38px;"/>
             #else
             <img src="${theme_option('logo_url')}" alt="${site_title()}" style="height: 38px;"/>
             #end
         </a>
         <div class="navbar-menu">
             <a href="${site_url('/archives')}">归档</a>
-            <a href="${site_url('/list')}">待办</a>
             <a href="${site_url('/links')}">友链</a>
         </div>
         <div class="navbar-search" onclick="">
